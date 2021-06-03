@@ -1,0 +1,146 @@
+html body {
+    width: auto;
+    height: auto;
+    background: #f0fff0;
+    font-family: 'Courier New', Courier, monospace;  
+}
+.container{
+    width: auto;
+    height: auto;
+    padding-left: 250px;
+    padding-right: 250px;
+}
+.navmenu{
+    overflow: hidden;
+    height: 50px;
+}
+.navmenu a {
+    float: left;
+    color: #2e8b57;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+  }
+.navmenuRight{
+    float: right;
+    
+}
+.logo{
+    padding-top: 7px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.namedesign{
+    padding-top: 50px;
+}
+#nameheading{
+    font-size: 100px;
+    text-align: center;
+    color: #2e8b57;
+    margin-bottom: 0%;
+}
+#namesubheading{
+    margin-top: 0%;
+    font-size: 25px;
+    text-align: center;
+    color: #2e8b57;
+}
+.Home{
+    width: auto;
+    height: 350px;
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-right: 100px;
+    align-items: center;
+}
+#description{
+    color:#2e8b57;
+    float: left;
+    padding-top: 100px;
+    
+    
+}
+.ProfileImg{
+    float: right;
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+.Portfolio{
+    width: 960px;
+    height: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+#PortfolioText{
+    font-size: 50px;
+    text-align: center;
+    color: #2e8b57;
+}
+.PortfolioCard img{
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+.PortfolioCard{
+    height: 350px;
+    padding-top: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    transition: 0.4s;
+    width: 300px;
+    background: #fff;
+    text-align: center;
+    float: left;
+    margin: 10px;
+}
+.Skills h1{
+    font-size: 50px;
+    text-align: center;
+    color: #2e8b57;
+}
+.Skills{
+    padding-top: 50px;
+    width: auto;
+    height: 800px;
+}
+.Skills h2{
+    color:#2e8b57;
+    font-size: 20px;
+
+}
+.Skillset{
+    float: right;
+    background-color: rgb(192, 192, 192);
+    width: 100%;
+    border-radius: 100px;
+    margin-bottom: 50px;
+}
+.skill{
+    background-color: #2e8b57;
+    color: #121212;
+    text-align: right;
+    padding: 0.5%;
+    font-size: 20px;
+    border-radius: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+.java{
+    width: 99%;
+}
+.javascript{
+    width: 30%;
+}
+.html{
+    width: 70%;
+}
+.css{
+    width: 50%;
+}
+footer{
+    width: auto;
+    height: 300px;
+    text-align: center;
+    color:#2e8b57
+    
+}
