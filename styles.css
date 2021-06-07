@@ -5,12 +5,14 @@ html body {
     font-family: 'Titillium Web', sans-serif;  
 }
 .container{
+    position: relative;
     width: auto;
     height: auto;
-    padding-left: 250px;
-    padding-right: 250px;
+    margin-left: 250px;
+    margin-right: 250px;
 }
 .navmenu{
+    position: relative;
     overflow: hidden;
     height: 50px;
 }
@@ -26,12 +28,14 @@ html body {
     
 }
 .logo{
+    position: relative;
     padding-top: 7px;
     width: 30px;
     height: 30px;
     cursor: pointer;
 }
 .namedesign{
+    position: relative;
     padding-top: 50px;
 }
 .namedesign h1{
@@ -47,30 +51,35 @@ html body {
     color: #121212;
 }
 .Home{
+    position: relative;
     width: auto;
     height: 350px;
     padding-left: 100px;
-    padding-top: 100px;
     padding-right: 100px;
-    align-items: center;
-    padding-bottom: 125px;
+    padding-bottom: 225px;
+    text-align: center;
 }
 .Home span{
     color:#2e8b57;
 }
 .Home h1{
     color: #121212;
-    float: left;
-    padding-top: 100px;
+    padding-top: 50px;
+    text-align: center;
 }
 .ProfileImg{
-    float: right;
     border-radius: 50%;
     width: 350px;
     height: 350px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
+.Home img{
+    max-width: 25%;
+    min-width: 10%;
+    height: auto;
+}
 .Portfolio{
+    position: relative;
     width: 960px;
     height: 800px;
     margin: auto;
@@ -78,15 +87,18 @@ html body {
     margin-bottom: 50px;
 }
 #PortfolioText{
+    position: relative;
     font-size: 50px;
     text-align: center;
     color: #121212;
 }
 .PortfolioCard img{
+    position: relative;
     width: 90%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
 .PortfolioCard{
+    position: relative;
     height: 350px;
     padding-top: 15px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
@@ -98,24 +110,29 @@ html body {
     margin: 10px;
 }
 .projectDesc h4{
+    position: relative;
     color: #2e8b57;
     font-size: large;
 }
 #SkillsText{
+    position: relative;
     font-size: 50px;
     text-align: center;
     color: #121212;
 }
 .Skills{
+    position: relative;
     width: auto;
     height: 800px;
 }
 .Skills h2{
+    position: relative;
     color:#121212;
     font-size: 20px;
 
 }
 .Skillset{
+    position: relative;
     float: right;
     background-color: rgb(192, 192, 192);
     width: 100%;
