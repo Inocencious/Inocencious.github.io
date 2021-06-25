@@ -2,7 +2,8 @@ html body {
     width: auto;
     height: auto;
     background: #ffffff;
-    font-family: 'Titillium Web', sans-serif;  
+    font-family: 'Nunito', sans-serif;
+    
 }
 .container{
     position: relative;
@@ -16,17 +17,16 @@ html body {
     overflow: hidden;
     height: 50px;
 }
-.navmenu a {
-    float: left;
-    color: #2e8b57;
-    text-align: center;
-    text-decoration: none;
-    padding: 14px 16px;
+::-webkit-scrollbar {
+    width: 5px;
   }
-.navmenuRight{
-    float: right;
-    
-}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+::-webkit-scrollbar-thumb {
+    background: #2e8b57;
+    border-radius: 50px;
+  }
 .logo{
     position: relative;
     padding-top: 7px;
@@ -35,37 +35,32 @@ html body {
     cursor: pointer;
 }
 .namedesign{
+    margin-top: 200px;
     position: relative;
-    padding-top: 50px;
-}
-.namedesign h1{
-    font-size: 100px;
-    text-align: center;
-    color: #2e8b57;
-    margin-bottom: 0%;
-}
-.namedesign p{
-    margin-top: 0%;
-    font-size: 25px;
-    text-align: center;
-    color: #121212;
 }
 .Home{
     position: relative;
     width: auto;
     height: 350px;
+    padding-top: 225px;
     padding-left: 100px;
     padding-right: 100px;
-    padding-bottom: 225px;
+    padding-bottom: 300px;
     text-align: center;
 }
 .Home span{
     color:#2e8b57;
 }
 .Home h1{
+    font-size: 100px;
+    text-align: center;
+    margin: 0%;
+    color: #2e8b57;
+}
+.Home h2{
     color: #121212;
     padding-top: 50px;
-    text-align: center;
+    text-align: left;
 }
 .ProfileImg{
     border-radius: 50%;
@@ -74,10 +69,13 @@ html body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
 .Home img{
-    max-width: 25%;
-    min-width: 10%;
-    height: auto;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
 }
+img:hover {
+    transform: scale(1.05);
+  }
 .Portfolio{
     position: relative;
     width: 960px;
@@ -167,13 +165,5 @@ footer{
     color: black;
     background-color: #2e8b57;
     left: 0%;
-    
     position:absolute;
-}
-.Socials img{
-    margin-right: 10px;
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    
 }
