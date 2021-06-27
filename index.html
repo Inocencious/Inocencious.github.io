@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ken's Portfolio</title>
+    <title>Ken Inocencio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c8a6857732.js" crossorigin="anonymous"></script>
     <link rel="icon" href="Pictures/favicon.ico" type="image/x-icon">
@@ -19,36 +19,40 @@
         <ul class="navbar-nav">
             <li class="logo">
                 <a href="#" class="nav-link">
-                    <span><h1 class="nav-item" id="middlecomp">K</h1></span>
-                    <span class="link-text"><h1>INOCENCIO</h1></span>
+                    <span>
+                        <h1 class="nav-item" id="middlecomp">K</h1>
+                    </span>
+                    <span class="link-text">
+                        <h1>INOCENCIO</h1>
+                    </span>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">   
+                <a href="#" class="nav-link">
                     <span class="fas fa-medal fa-2x" id="middlecomp"></span>
                     <p class="link-text">Skills</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">   
+                <a href="#" class="nav-link">
                     <span class="fas fa-archive fa-2x" id="middlecomp"></span>
                     <p class="link-text">Projects</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">   
+                <a href="#" class="nav-link">
                     <span class="far fa-file fa-2x" id="file"></span>
                     <p class="link-text">Resume</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">   
+                <a href="#" class="nav-link">
                     <span class="fab fa-github fa-2x" id="middlecomp"></span>
                     <p class="link-text">Github</p>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">   
+                <a href="#" class="nav-link">
                     <span class="fab fa-linkedin-in fa-2x" id="middlecomp"></span>
                     <p class="link-text">LinkedIn</p>
                 </a>
@@ -56,15 +60,58 @@
         </ul>
     </nav>
     <main>
+        <div class="cursor"></div>
+        <div class="cursor-lazy"></div>
+        <div class="area">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
         <div class="Home">
-            
             <h1>KEN INOCENCIO</h1>
             <h2>
+                Hello, my name is <span>Ken Inocencio.</span>
+                an aspiring <span>Software Developer.</span>
                 1st Year Bachelor of Science in Computer Science.
-                Studying in <span>De La Salle University Dasmarinas Cavite.</span>
+                Currently Studying in <span>De La Salle University Dasmarinas Cavite.</span>
             </h2>
+            <h3 id="AboutMe">About Me!</h3>
+            <p>Since i was a kid, i was interested in <span>computers</span> and how <span>Technology</span> works.
+                <span>Curiousity</span> helped me develop what i love doing now.
+            </p>
+            <p>
+                When <span>Java</span> was first introduced to me. I was <span>fascinated</span> on how i could tell
+                the computer to do a certain task, this made me feel <span>excited</span> and did not
+                want to stop coding ever since. which led to me <span>venturing</span> out to other
+                language like <span>javascript</span> and making side project that you can check out in
+                <span>Projects</span>
+            </p>
         </div>
-        <main>
+    </main>
+    <script>
+        (function(){
+            var cursor = document.querySelector('.cursor');
+            var cursorLazy = document.querySelector('.cursor-lazy');
+            var links = document.querySelectorAll('a');
+
+            var editCursor = function editCursor(event){
+                cursor.style.left = event.clientX + 'px';
+                cursor.style.top = event.clientY + 'px';
+                cursorLazy.style.left = event.clientX + 'px';
+                cursorLazy.style.top = event.clientY + 'px';
+            }
+            window.addEventListener('mousemove', editCursor);
+        })();
+    </script>
 </body>
 
 </html>
