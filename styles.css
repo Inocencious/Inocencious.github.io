@@ -15,31 +15,28 @@ html, body{
     cursor: none;
 }
 .cursor{
-    z-index: 5;
-    pointer-events: none;
-    width: 15px;
     height: 15px;
-    border-radius: 50%;
-    position: absolute;
-    transform: translate3d(-50%, -50%, 0);
-    top: 0;
-    left: 0;
+    width: 15px;
+    position: fixed;
+    transform: translate(0px, 0px);
     background-color: var(--text-primary);
-    
-}
-.cursor-lazy{
-    z-index: 5;
+    border-radius: 50%;
+    transition: height .3s cubic-bezier(0.46,0.03,0.52,0.96), width .3s cubic-bezier(0.46,0.03,0.52,0.96);
+    z-index: 5000;
     pointer-events: none;
-    width: 30px;
-    height: 30px;
+}
+
+.cursor-lazy{
+    height: 40px;
+    width:  40px;
     border-radius: 50%;
     border: 2px solid var(--text-primary);
-    position: absolute;
-    transform: translate3d(-50%, -50%, 0);
-    top: 0;
-    left: 0;
-    transition: 0.1s ease-out;
-    
+    background-color: transparent;
+    position: fixed;
+    z-index: 5000;
+    transform: translate(0px, 0px);
+    pointer-events: none;
+    opacity: 0.5;
 }
 main{
     margin-left: 5rem;
@@ -62,6 +59,7 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     background-color: var(--navbar-color);
     transition: 200ms ease-in;
+    cursor: none;
 }
 .navbar-nav{
     list-style: none;
@@ -83,6 +81,7 @@ body::-webkit-scrollbar-thumb {
     color: var(--text-primary);
     filter:opacity(0.7);
     transition: 600ms;
+    cursor: none;
 }
 #middlecomp{
     padding-left: 5px;
