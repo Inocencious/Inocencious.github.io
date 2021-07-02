@@ -24,8 +24,9 @@ html, body{
     transition: height .3s cubic-bezier(0.46,0.03,0.52,0.96), width .3s cubic-bezier(0.46,0.03,0.52,0.96);
     z-index: 5000;
     pointer-events: none;
+    left: 5px;
+    top: 10px;
 }
-
 .cursor-lazy{
     height: 40px;
     width:  40px;
@@ -37,6 +38,8 @@ html, body{
     transform: translate(0px, 0px);
     pointer-events: none;
     opacity: 0.5;
+    left: 5px;
+    top: 10px;
 }
 main{
     margin-left: 5rem;
@@ -300,4 +303,34 @@ body::-webkit-scrollbar-thumb {
     text-align: justify;
     letter-spacing: 0.25rem;
     width: 45vw;
+}
+.card-list{
+    display: flex;
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-top: 10rem;
+}
+.card{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin-left: 20px;
+    top: 0%;
+    left: 0%;
+    height: 350px;
+    width: 300px;
+    min-width: 250px;
+    padding: 1.5rem;
+    background: #212121;
+
+    border-radius: 16px;
+    box-shadow: 1px 1px  black ;
+    transition: .2s;
+}
+.card:hover{
+    transform: translateY(-1rem);
 }
