@@ -18,7 +18,7 @@
     <nav class="navbar">
         <ul class="navbar-nav">
             <li class="logo">
-                <a href="#" class="nav-link">
+                <a href="index.html" class="nav-link">
                     <span>
                         <h1 class="nav-item" id="middlecomp">K</h1>
                     </span>
@@ -28,7 +28,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="projects.html" class="nav-link">
                     <span class="fas fa-archive fa-2x" id="middlecomp"></span>
                     <p class="link-text">Projects</p>
                 </a>
@@ -94,29 +94,9 @@
             </p>
         </div>
     </main>
-    <script>
-        $(window).ready(function () {
-
-            let mouseX = 0;
-            let mouseY = 0;
-            let xp = 0;
-            let yp = 0;
-
-            $(document).mousemove(function (e) {
-                $(".cursor").css({
-                    transform: 'translate(' + (e.clientX - 10) + 'px, ' + (e.clientY - 10) + 'px)'
-                });
-                mouseX = e.clientX - 10;
-                mouseY = e.clientY - 10;
-            });
-
-            setInterval(function () {
-                xp += ((mouseX - xp) / 6);
-                yp += ((mouseY - yp) / 6);
-                $(".cursor-lazy").css({ transform: 'translateX(' + (xp - 15) + 'px) translateY(' + (yp - 15) + 'px)' });
-            }, 10);
-        })
-    </script>
+    <script src="cursor.js"/>
+        
+  
 </body>
 
 </html>

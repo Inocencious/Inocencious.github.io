@@ -18,7 +18,7 @@
     <nav class="navbar">
         <ul class="navbar-nav">
             <li class="logo">
-                <a href="#" class="nav-link">
+                <a href="index.html" class="nav-link">
                     <span>
                         <h1 class="nav-item" id="middlecomp">K</h1>
                     </span>
@@ -28,7 +28,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="projects.html" class="nav-link">
                     <span class="fas fa-archive fa-2x" id="middlecomp"></span>
                     <p class="link-text">Projects</p>
                 </a>
@@ -73,50 +73,24 @@
                 <li></li>
             </ul>
         </div>
+
         <section class="card-list">
             <article class="card">
                 <header>
-                    <p>July 2 2021</p>
-                    <h2>LOREM IPSUM NDUKJABKDABKWDKBU DBABDKWBKD DBNASKUDBKSK</h2>
+                    <img src="Pictures/Website.png" alt=""></img>
+                    <h1>Website</h1>
+                    <h4>A Portfolio Website made with html css and javascript</h4>
                 </header>
-            </article>
-            <article class="card">
-                <header>
-                    <p>July 2 2021</p>
-                    <h2>LOREM IPSUM NDUKJABKDABKWDKBU DBABDKWBKD DBNASKUDBKSK</h2>
-                </header>
-            </article>
-            <article class="card">
-                <header>
-                    <p>July 2 2021</p>
-                    <h2>LOREM IPSUM NDUKJABKDABKWDKBU DBABDKWBKD DBNASKUDBKSK</h2>
-                </header>
+                <footer>
+                    <span class="tag">html</span>
+                    <span class="tag">css</span>
+                    <span class="tag">javascript</span>
+                    <span class="fab fa-github fa-2x" id="github"></span>
+                </footer>
             </article>
         </section>
     </main>
-    <script>
-        $(window).ready(function () {
-
-            let mouseX = 0;
-            let mouseY = 0;
-            let xp = 0;
-            let yp = 0;
-
-            $(document).mousemove(function (e) {
-                $(".cursor").css({
-                    transform: 'translate(' + (e.clientX - 10) + 'px, ' + (e.clientY - 10) + 'px)'
-                });
-                mouseX = e.clientX - 10;
-                mouseY = e.clientY - 10;
-            });
-
-            setInterval(function () {
-                xp += ((mouseX - xp) / 6);
-                yp += ((mouseY - yp) / 6);
-                $(".cursor-lazy").css({ transform: 'translateX(' + (xp - 15) + 'px) translateY(' + (yp - 15) + 'px)' });
-            }, 20);
-        })
-    </script>
+    <script src="cursor.js"/>
 </body>
 
 </html>
